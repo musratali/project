@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="login">
+            <div id="model" style="height: 660px; margin-top: 40px;">
+                <h2>user details</h2>
+                <form action="" id="editsprofile" onsubmit="userupdate(event)">
+                    <div class="inputBox">
+                <input type="text" name="name" placeholder="name" >
+            <input type="email" name="profileEmail" placeholder="email">
+            <input type="number" name="phone" placeholder="phone">
+            <input type="text" name="specialty" placeholder="specialty" id="">
+            <input type="text" name="portfolioUrl" placeholder="portfolioUrl">
+            <input type="text" name="experience" placeholder="experience">
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="add" id="btn">
+            </div>
+            <div class="group">
+                <a href="login.html">login</a>
+                
+             </div> 
+        </div>
+            </form>
+        </section>
+        <script src="./app.js"></script>
+        <script src="./firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script> -->
+        <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBxtEj7bPT5-P9PoM12V3dA0gGIo6z0o5Y",
+            authDomain: "musrat-mah.firebaseapp.com",
+            projectId: "musrat-mah",
+            storageBucket: "musrat-mah.appspot.com",
+            messagingSenderId: "790439687146",
+            appId: "1:790439687146:web:505730a23a01b054853893",
+            measurementId: "G-VPJCG21MVP"
+          };
+        
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+    
+</body>
+</html>

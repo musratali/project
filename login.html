@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+<!-- <div class="container">
+    <div class="box">
+    
+    <div> -->
+        <div class="login">
+       <h1> Login</h1>
+    <form onsubmit="Login (event)">
+        <!-- <div class="inputBox">
+            <input type="text" placeholder="Username">
+        </div> -->
+        <div class="inputBox">
+        <input type="text"placeholder="enter your email" id="login_email">
+        </div>
+        <div class="inputBox">
+        <input type="password"name="" id="login_password">
+        </div>
+        <div class="inputBox">
+        <button type="submit" style="background-color: wheat; margin-left: 60px; height: 40px; width: 120px;">login</button>
+        <!-- </div> -->
+        <button onclick="logout(event)" style="background-color:wheat; height: 40px; width: 120px;">Logout</button>
+        
+    </div>
+    </form>
+    </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+    <script>
+    
+    const firebaseConfig = {
+    apiKey: "AIzaSyAALNBfNUZ1IF1gf5cs94sPmoGMjM6FdBY",
+    authDomain: "project-two-b9624.firebaseapp.com",
+    projectId: "project-two-b9624",
+    storageBucket: "project-two-b9624.appspot.com",
+    messagingSenderId: "1039135188440",
+    appId: "1:1039135188440:web:6b335d43b817141a1cbead",
+    measurementId: "G-MT9FS8XFQ6"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    </script> 
+    
+    </body>
+    </html>

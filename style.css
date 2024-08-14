@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+
+
+h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.book{
+    display: flex;
+    font-size: 30px;
+}
+.row-1{
+display: flex;
+font-size: 20px;
+height: 350px;
+}
+h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.col{
+    display: flex;
+    font-size: 20px;
+}
+h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    color: blue;
+}
+.byt{
+    display: flex;
+    justify-content: center;
+    
+}
+.col-4{
+    display: flex;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}                    
+
+h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    color: blue;
+
+}
+.header .row{
+    margin-top: 100px;
+}
+
+/* .small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+} */
+
+
+.foot-panel{
+    background-color: #37475a;
+    color: #cccccc;
+    height:60px ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 0.85rem;
+    font-weight: 700;
+
+
+
+}
+/* footer  */
+footer{
+    margin-top: 10px;
+    background-color: #222f3d;
+color: white;
+
+
+}
+.foot-panel{
+    background-color: #37475a;
+    color: #cccccc;
+    height:50px ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 0.85rem;
+    font-weight: 700;
+
+
+}
+.foot-panel:hover{
+    color: #000;
+    background-color: #686664d3;
+}
+.footer-div{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.footer-div:hover{
+    color: #000;
+    text-decoration: underline;
+    background-color: #41546b;
+
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+
+.foot-panel4{
+    background-color: #222f3d;
+    color: #cccccc;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 10px;
+    border-top: 0.5px solid white;
+}
+
+.pages{
+    color: aliceblue;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.pages:hover{
+    color: #000;
+    text-decoration: underline;
+  
+}
+.copyright{
+    font-size: 0.6rem;
+}
+          
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  section .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  
+  section .trees {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+    z-index: 100;
+    pointer-events: none;
+  }
+  
+  section .girl {
+    position: absolute;
+    scale: 0.65;
+    pointer-events: none;
+    animation: animateGirl 10s linear infinite;
+  }
+  
+  @keyframes animateGirl {
+    0% {
+      transform: translateX(calc(100% + 100vw));
+    }
+    50% {
+      transform: translateX(calc(-100% - 100vw));
+    }
+    50.01% {
+      transform: translateX(calc(-100% - 100vw)) rotateY(180deg);
+    }
+    100% {
+      transform: translateX(calc(100% + 100vw)) rotateY(180deg);
+    }
+  }
+  
+  .login {
+    position: relative;
+    padding: 40px;
+    background: rgba(230, 174, 174, 0.8);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login h2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    /* font-weight: 600; */
+    color: #8f2c24;
+    /* margin-bottom: 10px; */
+  }
+  
+  .login .inputBox {
+    position: relative;
+  }
+  
+  .login .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: #8f2c24;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    margin-bottom: 30px;
+  }
+  
+  .login .inputBox ::placeholder {
+    color: #8f2c24;
+  }
+  
+  .login .inputBox #btn {
+    position: relative;
+    border: none;
+    outline: none;
+    background: #8f2c24;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  .login .inputBox #btn {
+    position: relative;
+    border: none;
+    outline: none;
+    background: #8f2c24;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  
+  .login .inputBox #btn:hover {
+    background: #d64c42;
+  }
+  
+  .login .group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .login .group a {
+    font-size: 1.25em;
+    color: #8f2c24;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    outline: none;
+    background: #8f2c24;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.25em;
+    align-self: center;
+    text-align: center;
+    margin: 10px;
+    margin: 10px;
+    font-weight: 500;
+    
+    transition: 0.5s;
+    width: 110%;
+    height: 40px;
+  }
+  
+  .login .group a:nth-child(2) {
+    text-decoration: underline;
+  }
+  
+  
+ 
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      top: -10%;
+      transform: translateX(20px) rotate(0deg);
+    }
+    10% {
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(-20px) rotate(45deg);
+    }
+    40% {
+      transform: translateX(-20px) rotate(90deg);
+    }
+    60% {
+      transform: translateX(20px) rotate(180deg);
+    }
+    80% {
+      transform: translateX(-20px) rotate(45deg);
+    }
+    100% {
+      top: 110%;
+      transform: translateX(20px) rotate(225deg);
+    }
+  }
